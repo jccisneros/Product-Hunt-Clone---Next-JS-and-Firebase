@@ -2,10 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import { css } from '@emotion/react'
 
+import { HeaderStyle, ContenedorHeader, Logo, Buton } from '../../shared/styles'
+
 import Buscador from '../ui/Buscador'
 import Navigation from './Navigation'
 
-import { HeaderStyle, ContenedorHeader, Logo, Buton } from '../../styles/styles'
 
 export default function Header() {
 
@@ -39,23 +40,25 @@ export default function Header() {
                   margin-right: 2rem;
                 `}
               > Hola: José </p>
-              <Buton
-                bgColor={ true }
-              >   
-                Cerrar Sesión
-              </Buton>
+              <Link href="/iniciar-sesion"> 
+                <Buton
+                  bgColor={ true }
+                >   
+                  Cerrar Sesión
+                </Buton>
+              </Link>
             </>
           )
           :(
             <>
-              <Link href="/"> 
+              <Link href="/iniciar-sesion"> 
                 <Buton
                   bgColor={ true }
                 >  
                   Iniciar Sesión
                 </Buton> 
               </Link>
-              <Link href="/"> 
+              <Link href="/crear-cuenta"> 
                 <Buton>  Crear Cuenta </Buton> 
               </Link>
             </>

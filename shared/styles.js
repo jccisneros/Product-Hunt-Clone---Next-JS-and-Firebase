@@ -26,11 +26,12 @@ export const globalStyles = (
       }
       h1, h2, h3 {
         margin: 0, 0, 2rem, 0;
-        line-height: 1.5;
+        line-height: 1.5;        
       }
       h1, h2 {
         font-family: 'Roboto Slab', serif;
         font-weight: 700;
+        font-size: 3rem !important;
       }
       ul {
         list-style: none;
@@ -44,7 +45,8 @@ export const globalStyles = (
   />
 )
 
-export { HeaderStyle, ContenedorHeader, Logo } from './styles-header'
-export { Buton } from './styles-button'
-export { InputText, InputSubmit } from './styles-search'
-export { Nav } from './styles-nav'
+export { HeaderStyle, ContenedorHeader, Logo } from './Header'
+export { Buton } from './Button'
+export { InputText, ButtonSearch } from './Search'
+export { Nav } from './Nav'
+export { Form, Field, InputSubmit } from './Form'

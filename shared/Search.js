@@ -7,11 +7,11 @@ export const InputText = styled.input`
   font-size: 1.5rem;
 
   &:focus{
-    border: 1.4px solid var(--orange);
+    border: 1.9px solid var(--orange);
   }
 `
 
-export const InputSubmit = styled.button`
+export const ButtonSearch = styled.button`
   height: 3.6em;
   width: 3.6rem;
   display: block;

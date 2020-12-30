@@ -16,6 +16,10 @@ export const Nav = styled.nav`
     &:hover {
       color: var(--orange);
       font-weight: 600;
-    }
+    }    
+
+    @media(max-width: 991px){
+      display: none;      
+  }
   }
 `

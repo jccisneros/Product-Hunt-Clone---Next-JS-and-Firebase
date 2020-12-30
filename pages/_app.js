@@ -1,6 +1,6 @@
 import React from 'react'
 import 'normalize.css'
-import { globalStyles } from '../styles/styles'
+import { globalStyles } from '../shared/styles'
 
 const MyApp = ({ Component, pageProps }) => (    
   <>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/react'
-import { InputText, InputSubmit } from '../../styles/styles'
+import { InputText, ButtonSearch } from '../../shared/styles'
 
 
 export default function Buscador() {
@@ -11,9 +11,9 @@ export default function Buscador() {
       `}
     >
       <InputText type="text"defaultValue="Buscar" />
-      <InputSubmit type="submit">
+      <ButtonSearch type="submit">
         Buscar Productos
-      </InputSubmit>
+      </ButtonSearch>
     </form>
   )
 }
